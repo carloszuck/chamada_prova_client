@@ -3,16 +3,16 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { Switch, Route } from 'react-router-dom';
 import './App.css';
-import ExamplePage from './pages/ExamplePage';
-import Home from './pages/Home';
+import Turmas from './pages/Turmas';
+import Cadastro from './pages/Cadastro';
 
 const App: React.FC = () => {
   return (
     <>
       <Header />
       <Switch>
-        <Route path='/example' component={ExamplePage}/>    
-        <Route path='/' component={Home}/>       
+        <Route path='/turmas' component={Turmas}/>    
+        <Route path='/cadastro' component={Cadastro}/>       
       </Switch>
       <Footer />
     </>
