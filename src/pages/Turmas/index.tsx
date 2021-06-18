@@ -62,7 +62,6 @@ const StudentList: React.FC = () => {
                       <td>{student.studentClass}</td>
                       <td>{student.num}</td>
                       <td>{student.ra}</td>
-                      <th><Link to={`/students/${student._id}`}><FontAwesomeIcon icon={faPencilAlt} /></Link></th>
                       <th><FontAwesomeIcon icon={faTrash} onClick={() => {
                         setDeletedStudentId(`${student._id}`); 
                         delStudent();
