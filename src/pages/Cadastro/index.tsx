@@ -13,14 +13,14 @@ const Cadastro: React.FC = () => {
   async function handleAddStudent(e: any) {
     e.preventDefault();
 
-    const addedProduct = await api.post('/students', {
-      name, 
-      studentClass, 
-      num, 
-      ra
+    const addedProduct = await api.post('/create_students', {
+      name: name, 
+      studentClass: studentClass, 
+      num: num, 
+      ra: ra
     });
 
-    history.push('/products');
+    history.push('/turmas');
   }
     return (
       <>
